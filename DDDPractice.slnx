@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DDDPractice.ConsoleApp/DDDPractice.ConsoleApp.csproj" />
+  <Project Path="DDDPractice.Domain/DDDPractice.Domain.csproj" />
+</Solution>
