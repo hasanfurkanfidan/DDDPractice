@@ -18,6 +18,17 @@ namespace DDDPractice.Domain.Users
         public Password Password { get; private set; }
         public Address Address { get; private set; }
 
+        public static User CreateUser(string name,string email,string password, string country, string city, string street, string fullAddress, string postalCode)
+        {
+            return new User(
+                Guid.NewGuid(),
+                new Name(name),
+                new Email(email),
+                new Password(password),
+                new Address(country, city, street, fullAddress, postalCode)
+            );
+        }
+
         public void ChangeName(string newName)
         {
             Name = new(newName);
